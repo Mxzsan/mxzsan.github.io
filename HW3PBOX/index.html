@@ -121,20 +121,25 @@
         .sidebar ul li a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 22px;
+            transition: color 0.3s ease; /* 添加颜色变化的过渡效果 */
         }
+        
         .sidebar ul li a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* 鼠标悬停时添加下划线 */
+            color: #ffcc00; /* 鼠标悬停时修改文字颜色 */
         }
+
         .menu-btn {
-            font-size: 24px; /* 调整图标大小 */
-            cursor: pointer; /* 鼠标悬停时显示手型光标 */
-            position: absolute;
-            top: 20px;
-            left: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            position: fixed; /* 固定定位 */
+            top: 20px; /* 距离顶部20像素 */
+            left: 20px; /* 距离左侧20像素 */
             z-index: 2000; /* 确保在其他内容之上 */
             color: white;
         }
+        
         /* 菜单图标样式 */
         .menu-icon {
             width: 30px;
@@ -196,7 +201,14 @@
             <li><a href="https://jlv-software.github.io/HKW-Tools/">HKW工具箱官网</a></li>
         </ul>
     </div>
-
+    <!--
+ _    ___          ______  _____  ____   ______   __
+ | |  | \ \        / /___ \|  __ \|  _ \ / __ \ \ / /
+ | |__| |\ \  /\  / /  __) | |__) | |_) | |  | \ V / /
+ |  __  | \ \/  \/ /  |__ <|  ___/|  _ <| |  | |> <  
+ | |  | |  \  /\  /   ___) | |    | |_) | |__| / . \ 
+ |_|  |_|   \/  \/   |____/|_|    |____/ \____/_/ \_\
+    -->
     <script>
         var menuBtn = document.querySelector('.menu-btn');
         var sidebar = document.querySelector('.sidebar');
