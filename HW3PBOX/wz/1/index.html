@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win7运行帮助</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .article-title {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-title h1 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        .article-meta {
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .article-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="article-title">
+            <h1>HW3PBOXWin7运行帮助</h1>
+            <p class="article-meta">作者: Mxzsan | 日期: 2024年7月19日</p>
+        </div>
+        <div class="article-content">
+            <p>首先,下载api-ms-win-core-path-l1-1-0.dll(如果提示丢失的话)</p>
+            <p>64位:https://fel.forxhr.top:2022/down.php/905b94c91755f2c2aec628c2131c7ffa.dll</p>
+            <p>32位:https://fel.forxhr.top:2022/down.php/582edc1b799f2321cc476003b0fa5f98.dll</p>
+            <p>下载完成后,如果是64位系统,将api-ms-win-core-path-l1-1-0.dll拖入C:\Windows\System32文件夹,如果是32位系统,则拖入C:\Windows\SysWOW64文件夹</p>
+            <img src=".\res\image8.png" alt="%图片无法加载%">
+            <p>拖入完成后,可以看到已经没有丢失dll的提示了</p>
+            <p>然后,下载Visual C++ Redistributable for Visual Studio 2015</p>
+            <p>64位:https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe</p>
+            <p>32位:https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x86.exe</p>
+            <p>下载完成后,打开Visual C++ Redistributable for Visual Studio 2015安装程序</p>
+            <p>此时,你会看到这样一个页面:</p>
+            <img src=".\res\image1.png" alt="%图片无法加载%">
+            <p>勾选"我同意许可条款和条件(A)"</p>
+            <img src=".\res\image2.png" alt="%图片无法加载%">
+            <p>点击"安装(I)"</p>
+            <p>此时,有两种情况,一种是出现0x8007066错误,一种是安装成功</p>
+            <h1>情况一 0x8007066错误</h1>
+            <img src=".\res\image3.png" alt="%图片无法加载%">
+            <p>打开控制面板</p>
+            <img src=".\res\image6.png" alt="%图片无法加载%">
+            <p>点击"程序"</p>
+            <img src=".\res\image7.png" alt="%图片无法加载%">
+            <p>点击"程序和功能"</p>
+            <img src=".\res\image4.png" alt="%图片无法加载%">
+            <p>右键比Visual C++ Redistributable for Visual Studio 2015同版本或比Visual C++ Redistributable for Visual Studio 2015大的版本,点击"卸载(U)"
+            <p>在弹出的窗口里,点击"卸载(U)"</p>
+            <img src=".\res\image9.png" alt="%图片无法加载%">
+            <p>出现"设置成功"即为卸载完成</p>
+            <img src=".\res\image10.png" alt="%图片无法加载%">
+            <p>之后重新打开安装程序,跟着之前的步骤安装即可</p>
+            <h1>情况二 安装成功</h1>
+            <img src=".\res\image5.png" alt="%图片无法加载%">
+        </div>
+    </div>
+</body>
+</html>
